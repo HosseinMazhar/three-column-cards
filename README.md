@@ -1,7 +1,7 @@
 # three column cards
 ![screen shot of project](https://user-images.githubusercontent.com/91896821/154346270-e0462d8f-f936-4f77-a007-815c05a0e9e5.PNG)
 
-## chalenges I've been through
+## challenges I've been through
 
 I had to build three cards in three columns which are responsive for all screen sizes and design three buttons with hover effect for each card.
 
