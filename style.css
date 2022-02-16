@@ -1,0 +1,161 @@
+body
+{
+    width: 100%;
+    height: 100vh;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    min-height: 550px;
+}
+
+@font-face {
+    font-family: bsd;
+    src: url(fonts/BigShouldersDisplay-VariableFont_wght.ttf);
+}
+@font-face {
+    font-family: lexend;
+    src: url(fonts/LexendDeca-VariableFont_wght.ttf);
+}
+
+#sedans
+{
+    width: 21%;
+    min-width: 180px;
+    max-width: 400px;
+    height: 500px;
+    border-radius: 8px 0 0 8px;
+    background: url(images/icon-sedans.svg) 20% 48px / 64px 40px no-repeat #E28625;
+
+
+}
+
+#suvs
+{
+    width: 21%;
+    min-width: 180px;
+    max-width: 400px;
+    height: 500px;
+    background: url(images/icon-suvs.svg) 20% 48px / 64px 40px no-repeat #006971;
+
+
+}
+
+#luxury
+{
+    width: 21%;
+    min-width: 180px;
+    max-width: 400px;
+    height: 500px;
+    border-radius: 0 8px 8px 0;
+    background: url(images/icon-luxury.svg) 20% 48px / 64px 40px no-repeat #004140;
+}
+
+.heading h1{
+    color:hsl(0, 0%, 95%) ;
+    padding-top: 120px;
+    padding-left: 20%;
+    padding-right: 20%;
+    font-size: 250%;
+    font-family: bsd, serif;
+    font-weight: bold;
+}
+
+.describtion{
+    padding-top: 30px;
+    padding-right: 15%;
+    padding-left: 20%;
+    line-height: 20px;
+    max-height: 200px;
+    height: 25%;
+}
+
+.describtion span{
+    color: hsla(0, 0%, 100%, 0.75);
+    font-family: lexend, serif;
+    font-size: 80%;
+}
+
+.button 
+{
+    padding-left: 20%;
+    padding-top: 80px;
+}
+
+.button button
+{
+    width: 120px;
+    height: 50px;
+    border-radius: 30px;
+    border:hsla(0, 0%, 100%, 0.75) solid 3px;
+    font-family: lexend, serif;
+    cursor: pointer;
+
+}
+
+#sedans-button button{
+    color: #E28625;
+}
+
+#suvs-button button{
+    color: #006971;
+}
+
+#luxuury-button button{
+    color: #004140;
+}
+
+#sedans-button button:hover{
+    transition-duration: 0.5s;
+    background-color: #E28625;
+    color: hsla(0, 0%, 100%, 0.75);
+}
+
+#suvs-button button:hover{
+    transition-duration: 0.5s;
+    background-color: #006971;
+    color: hsla(0, 0%, 100%, 0.75);
+}
+
+#luxury-button button:hover{
+    transition-duration: 0.5s;
+    background-color: #004140;
+    color: hsla(0, 0%, 100%, 0.75);
+}
+
+@media only screen and (max-width: 550px) {
+
+    body{
+        height: fit-content;
+        flex-direction: column;
+        justify-content: center;
+        margin-top: 5%;
+        margin-bottom: 5%;
+    }
+
+    #sedans{
+        width: 70%;
+        min-width: 200px;
+        border-radius: 8px 8px 0 0;
+        height: 450px;
+    }
+
+    #suvs{
+        width: 70%;
+        min-width: 200px;
+        height: 450px;
+    }
+    
+    #luxury{
+        width: 70%;
+        min-width: 200px;
+        border-radius: 0 0 8px 8px;
+        height: 450px;
+    }
+
+    .button {
+        padding-top: 50px;
+    }
+
+
+
+}
